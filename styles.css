@@ -1,7 +1,131 @@
+@font-face {
+  font-family: "noto";
+  src: url(Assets/Fonts/NotoSansMono-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "noto-thin";
+  src: url(Assets/Fonts/NotoSansMono-Thin.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "noto";
+  src: url(Assets/Fonts/NotoSansMono-Bold.ttf);
+  font-weight: 700;
+}
 :root {
   --primary-color: #954e13;
   --secondary-color: #f9e5d2;
   --accent-color: #ac5916;
   --text-color: #170c03;
   --background-color: #fcf1e8;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "noto";
+  color: var(--secondary-color);
+}
+.logo {
+  width: 20%;
+  background-color: var(--primary-color);
+}
+nav {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  padding: 0px 25px;
+}
+.ul-navbar {
+  flex-grow: 0.5;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  width: 280px;
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 8px;
+  overflow-y: hidden;
+}
+.product-card-image {
+  display: block;
+  max-width: 100%;
+  animation: fadeIn 0.25s;
+}
+.product-card-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--accent-color);
+  font-size: 1rem;
+  color: var(--text-color);
+  letter-spacing: 1px;
+  padding: 20px;
+  border-radius: inherit;
+  animation: fadeIn 0.5s;
+}
+.product-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.product-card-subtitle {
+  color: var(--text-color);
+}
+.product-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-card-price {
+  font-weight: 600;
+}
+.product-card-button {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+.product-card-button:hover,
+.product-card-button:focus {
+  background-color: var(--background-color);
+}
+.fa-solid fa-plus {
+  font-size: 18px;
+  transition: transform 0.25s;
+}
+.product-card-button:hover .fa-solid fa-plus,
+.product-card-button:focus .fa-solid fa-plus {
+  transform: rotate(1turn);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

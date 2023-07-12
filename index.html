@@ -3,18 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>DroidSquad</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="Assets/logo-tab.svg" />
   </head>
   <body>
     <!-- Navigation Bar -->
     <nav>
-      <div class="logo-container"><img src="" alt="" /></div>
+      <div class="logo-container">
+        <img class="logo" src="Assets/logo.svg" alt="logo droidsquad" />
+      </div>
       <ul class="ul-navbar">
-        <li class="li-navbar">Home</li>
-        <li class="li-navbar">About</li>
-        <li class="li-navbar">Products</li>
-        <li class="li-navbar">Reviews</li>
-        <li class="li-navbar">Order!</li>
+        <li class="li-navbar"><a href="#" class="nav-link">Home</a></li>
+        <li class="li-navbar"><a href="#about" class="nav-link">About</a></li>
+        <li class="li-navbar">
+          <a href="#product" class="nav-link">Products</a>
+        </li>
+        <li class="li-navbar">
+          <a href="#review" class="nav-link">Reviews</a>
+        </li>
+        <li class="li-navbar"><a href="#order" class="nav-link">Order!</a></li>
       </ul>
       <div class="hamburger">
         <span class="bar"></span>
@@ -23,18 +31,149 @@
       </div>
     </nav>
     <!-- About -->
-    <header>
-      <h1></h1>
-      <p></p>
+    <header class="flex-container">
+      <h1>DroidSquad</h1>
+      <p class="pheader">
+        Experience the future today with DroidSquad, the premier droid rental
+        service. From personal assistants to security guards, our cutting-edge
+        droids are equipped with advanced AI and tailored to your needs. Choose,
+        rent, and unlock endless possibilities. Join the revolution with
+        DroidSquad.
+      </p>
     </header>
     <!-- Content -->
     <main>
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container-about">
+          <img src="" alt="" />
+          <div class="container-about2">
+            <h5>Advanced AI and Automation</h5>
+            <p>
+              Our droids feature cutting-edge artificial intelligence and
+              automation, enabling them to efficiently and effectively perform
+              tasks with minimal human intervention.
+            </p>
+          </div>
+        </div>
+        <div class="container-about">
+          <img src="" alt="" />
+          <div class="container-about2">
+            <h5>Customization Options</h5>
+            <p>
+              Customize your droid to suit your preferences and needs, from
+              appearance to personality and functionality, ensuring a
+              personalized and tailored experience.
+            </p>
+          </div>
+        </div>
+        <div class="container-about">
+          <img src="" alt="" />
+          <div class="container-about2">
+            <h5>Versatility and Adaptability</h5>
+            <p>
+              Our droids are designed to handle a wide range of tasks and
+              seamlessly adapt to different environments, making them versatile
+              companions capable of assisting with various daily activities.
+            </p>
+          </div>
+        </div>
+        <div class="container-about">
+          <img src="" alt="" />
+          <div class="container-about2">
+            <h5>User-Friendly Interface and Intuitive Interaction</h5>
+            <p>
+              Interact effortlessly with our droids through intuitive
+              interfaces, including voice commands, touchscreens, and gesture
+              recognition, ensuring a natural and user-friendly experience for
+              everyone.
+            </p>
+          </div>
+        </div>
+      </section>
       <!-- Products -->
-      <section></section>
+      <section id="product">
+        <div class="product-card">
+          <img
+            src="Assets/c3po.png"
+            alt="product1-c3po"
+            class="product-card-image"
+          />
+          <figcaption class="product-card-caption">
+            <div class="product-card-header">
+              <h2 class="product-card-title">C3PO</h2>
+              <p class="product-card-subtitle">Protocol Droid</p>
+            </div>
+            <div class="product-card-footer">
+              <span class="product-card-price">$ 3,900</span>
+              <button class="product-card-button">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </figcaption>
+        </div>
+        <div class="product-card">
+          <img
+            src="Assets/medical-droid.png"
+            alt="product2-medicaldroid"
+            class="product-card-image"
+          />
+          <figcaption class="product-card-caption">
+            <div class="product-card-header">
+              <h2 class="product-card-title">2-1B</h2>
+              <p class="product-card-subtitle">Medical Droid</p>
+            </div>
+            <div class="product-card-footer">
+              <span class="product-card-price">$ 7,300</span>
+              <button class="product-card-button">
+                <i class="product-card-icon"></i>
+              </button>
+            </div>
+          </figcaption>
+        </div>
+        <div class="product-card">
+          <img
+            src="Assets/c3po.png"
+            alt="product1-c3po"
+            class="product-card-image"
+          />
+          <figcaption class="product-card-caption">
+            <div class="product-card-header">
+              <h2 class="product-card-title">C3PO</h2>
+              <p class="product-card-subtitle">Protocol Droid</p>
+            </div>
+            <div class="product-card-footer">
+              <span class="product-card-price"></span>
+              <button class="product-card-button">
+                <i class="product-card-icon"></i>
+              </button>
+            </div>
+          </figcaption>
+        </div>
+        <div class="product-card">
+          <img
+            src="Assets/c3po.png"
+            alt="product1-c3po"
+            class="product-card-image"
+          />
+          <figcaption class="product-card-caption">
+            <div class="product-card-header">
+              <h2 class="product-card-title">C3PO</h2>
+              <p class="product-card-subtitle">Protocol Droid</p>
+            </div>
+            <div class="product-card-footer">
+              <span class="product-card-price"></span>
+              <button class="product-card-button">
+                <i class="product-card-icon"></i>
+              </button>
+            </div>
+          </figcaption>
+        </div>
+      </section>
       <!-- Reviews -->
-      <section></section>
+      <section id="review"></section>
       <!-- Order Form -->
-      <section></section>
+      <section id="order"></section>
     </main>
     <footer></footer>
   </body>
