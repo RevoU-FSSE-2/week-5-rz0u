@@ -266,16 +266,10 @@ fieldset {
   border-color: var(--primary-color);
   background-color: var(--primary-color);
 }
-div {
-  padding: 10px 5px;
-}
 label {
   background-color: var(--primary-color);
 }
 input {
-  background-color: var(--primary-color);
-}
-h2 {
   background-color: var(--primary-color);
 }
 select#species {
@@ -285,9 +279,6 @@ select#species {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-p {
-  background-color: var(--primary-color);
 }
 .sworn {
   padding: 5px;
@@ -333,6 +324,20 @@ textarea {
   display: block;
 }
 /* Product Card -------------------------------------------------------------------------------------------*/
+.product-heading h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--text-color);
+  padding: 10px 20px;
+}
+.product-heading span {
+  font-size: 1.3rem;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 .product-card {
   display: flex;
   flex-direction: column;
@@ -441,6 +446,63 @@ textarea {
   margin-bottom: 10px;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+.review-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.review-box {
+  width: 500px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 1);
+  background-color: var(--secondary-color);
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+.name-user {
+  display: flex;
+  flex-direction: column;
+}
+.name-user strong {
+  color: var(--accent-color);
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+.name-user span {
+  font-size: 0.8rem;
+}
+.box-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.review-star {
+  /* the color of the star */
+  color: var(--text-color);
+}
+.review-comment p {
+  font-size: 0.9rem;
 }
 /* Footer -------------------------------------------------------------------------------------------------*/
 .footer {
