@@ -1,12 +1,50 @@
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".ul-navbar");
+let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
 
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-})
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+}
 
-document.querySelectorAll(".nav-link").forEach(n => n. addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-}))
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+}
+
+var swiper = new Swiper(".home-slider", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    loop:true,
+  });
+
+  var swiper = new Swiper(".review-slider", {
+    spaceBetween: 20,
+    centeredSlides: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    loop:true,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        640: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+    },
+  });

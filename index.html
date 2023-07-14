@@ -2,9 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A Mock-up Landing page for a company that sells droid from the Star Wars Universe"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DroidSquad</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="Assets/logo-tab.svg" />
+    <!-- Swiper link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -12,94 +21,181 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="icon" type="image/x-icon" href="Assets/logo-tab.svg" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav>
-      <div class="logo-container">
-        <img class="logo" src="Assets/logo.svg" alt="logo droidsquad" />
+    <!-- Header Section Starts ------------------------------------------------------------------------------->
+    <header>
+      <a href="#" class="logo"
+        ><i class="fa-brands fa-android fa-rotate-270"></i>DroidSquad.</a
+      >
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#product">Products</a>
+        <a href="#review">Reviews</a>
+        <a href="#order">Order Now!</a>
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <a href="#" class="fa-solid fa-user"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
       </div>
-      <ul class="ul-navbar">
-        <li class="li-navbar"><a href="#" class="nav-link">Home</a></li>
-        <li class="li-navbar"><a href="#about" class="nav-link">About</a></li>
-        <li class="li-navbar">
-          <a href="#product" class="nav-link">Products</a>
-        </li>
-        <li class="li-navbar">
-          <a href="#review" class="nav-link">Reviews</a>
-        </li>
-        <li class="li-navbar"><a href="#order" class="nav-link">Order!</a></li>
-      </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
-    <!-- About -->
-    <header class="flex-container">
-      <h1>DroidSquad</h1>
-      <p class="pheader">
-        Experience the future today with DroidSquad, the premier droid rental
-        service. From personal assistants to security guards, our cutting-edge
-        droids are equipped with advanced AI and tailored to your needs. Choose,
-        rent, and unlock endless possibilities. Join the revolution with
-        DroidSquad.
-      </p>
     </header>
-    <!-- Content -->
-    <main>
-      <!-- About -->
-      <section id="about" class="section">
-        <div class="container-about">
-          <img src="" alt="" />
-          <div class="container-about2">
-            <h5>Advanced AI and Automation</h5>
-            <p>
-              Our droids feature cutting-edge artificial intelligence and
-              automation, enabling them to efficiently and effectively perform
-              tasks with minimal human intervention.
-            </p>
+
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper wrapper">
+          <!-- tagline 1 Start -->
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>0101100111</span>
+              <h3>Unlock The Future.</h3>
+              <p>
+                Experience the cutting-edge technology of our droids that
+                revolutionize daily living and unlock new possibilities.
+              </p>
+            </div>
+            <div class="image">
+              <img src="Assets/Android-bro.svg" alt="" />
+            </div>
+          </div>
+          <!-- tagline 1 End -->
+
+          <!-- tagline 2 Start -->
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>1010001101</span>
+              <h3>Transforming Lives.</h3>
+              <p>
+                Join the countless lives that have been transformed with our
+                droids, revolutionizing the way we live and work.
+              </p>
+            </div>
+            <div class="image">
+              <img src="Assets/Artificial intelligence-bro.svg" alt="" />
+            </div>
+          </div>
+          <!-- tagline 2 End -->
+
+          <!-- tagline 3 Start -->
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>0000111011</span>
+              <h3>Droids Perfected.</h3>
+              <p>
+                Discover a new level of efficiency and productivity with our
+                perfected droid companions by your side.
+              </p>
+            </div>
+            <div class="image">
+              <img src="Assets/Deconstructed robot-bro.svg" alt="" />
+            </div>
+          </div>
+          <!-- tagline 3 End -->
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- Home Section Ends -->
+    <!-- About Section Starts -->
+    <section class="about" id="about">
+      <h3 class="sub-heading">About</h3>
+      <h1 class="heading">why choose us?</h1>
+
+      <div class="row">
+        <div class="image">
+          <!-- <img src="Assets/Manufacturing Process-bro.svg" alt="Factory" /> -->
+        </div>
+
+        <div class="content">
+          <h3>DroidSquad.</h3>
+          <p>
+            Experience the future today with DroidSquad, the premier droid
+            rental service. From personal assistants to security guards, our
+            cutting-edge droids are equipped with advanced AI and tailored to
+            your needs. Choose, rent, and unlock endless possibilities. Embark
+            on an extraordinary journey into the future with DroidSquad, your
+            ultimate destination for cutting-edge droid rentals. Step into a
+            world where innovation meets convenience, as our advanced AI-powered
+            droids revolutionize every aspect of your daily life. From
+            personalized assistants that anticipate your needs to steadfast
+            security guards that ensure your peace of mind, our meticulously
+            tailored droids are ready to deliver unparalleled performance.
+            Choose, rent, and unlock a realm of endless possibilities as you
+            join the forefront of the technological revolution with DroidSquad.
+            Experience the seamless integration of state-of-the-art droids into
+            your lifestyle and embrace the limitless potential they bring. Your
+            extraordinary future starts here with DroidSquad.
+          </p>
+          <div class="icons-container">
+            <div class="about-box">
+              <div class="icons">
+                <i class="fa-solid fa-brain"></i>
+                <span>Advanced AI</span>
+              </div>
+              <p>
+                Our droids feature cutting-edge artificial intelligence and
+                automation, harnessing the power of state-of-the-art algorithms
+                and innovative technology to seamlessly and intelligently
+                perform a wide array of tasks with unparalleled efficiency,
+                effectiveness, and minimal reliance on human intervention.
+              </p>
+            </div>
+
+            <div class="about-box">
+              <div class="icons">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <span>Customization</span>
+              </div>
+              <p>
+                Customize your droid to suit your unique preferences and needs,
+                from its captivating appearance to its delightful personality
+                and versatile functionality, ensuring an exceptional,
+                personalized, and tailored experience like no other.
+              </p>
+            </div>
+
+            <div class="about-box">
+              <div class="icons">
+                <i class="fa-solid fa-code-branch"></i>
+                <span>Adaptability</span>
+              </div>
+              <p>
+                Our droids are designed to handle a wide range of tasks and
+                seamlessly adapt to different environments, making them
+                versatile companions capable of assisting with various daily
+                activities.
+              </p>
+            </div>
+
+            <div class="about-box">
+              <div class="icons">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>Simple Interface </span>
+              </div>
+              <p>
+                Interact effortlessly with our droids through intuitive
+                interfaces, including voice commands, touchscreens, and gesture
+                recognition, ensuring a natural and user-friendly experience for
+                everyone.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="container-about">
-          <img src="" alt="" />
-          <div class="container-about2">
-            <h5>Customization Options</h5>
-            <p>
-              Customize your droid to suit your preferences and needs, from
-              appearance to personality and functionality, ensuring a
-              personalized and tailored experience.
-            </p>
-          </div>
-        </div>
-        <div class="container-about">
-          <img src="" alt="" />
-          <div class="container-about2">
-            <h5>Versatility and Adaptability</h5>
-            <p>
-              Our droids are designed to handle a wide range of tasks and
-              seamlessly adapt to different environments, making them versatile
-              companions capable of assisting with various daily activities.
-            </p>
-          </div>
-        </div>
-        <div class="container-about">
-          <img src="" alt="" />
-          <div class="container-about2">
-            <h5>User-Friendly Interface and Intuitive Interaction</h5>
-            <p>
-              Interact effortlessly with our droids through intuitive
-              interfaces, including voice commands, touchscreens, and gesture
-              recognition, ensuring a natural and user-friendly experience for
-              everyone.
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- Products -->
-      <section id="product">
+      </div>
+    </section>
+    <!-- About Section Ends -->
+    <!-- Dishes Section Starts -->
+    <section class="product" id="product">
+      <h3 class="sub-heading">Our Products</h3>
+      <h1 class="heading">Popular Products</h1>
+
+      <div class="box-container">
+        <!-- Box 1 Start -->
         <div class="product-card">
           <img
             src="Assets/c3po.png"
@@ -176,64 +272,309 @@
             </div>
           </figcaption>
         </div>
-      </section>
-      <!-- Reviews -->
-      <section id="review"></section>
-      <!-- Order Form -->
-      <section id="order"></section>
-    </main>
-    <!-- Footer -->
+        <!-- Box 1 End -->
+      </div>
+    </section>
+    <!-- Dishes Section Ends -->
+
+    <!-- Review Section Starts -->
+    <section class="review" id="review">
+      <h3 class="sub-heading">Customer's Review</h3>
+      <h1 class="heading">What They Say</h1>
+
+      <div class="swiper-container review-slider">
+        <div class="swiper-wrapper">
+          <!-- Review 1 Start -->
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="Assets/sarahm.jpg" alt="Sarah M" />
+              <div class="user-info">
+                <h3>Sarah M</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              I'm absolutely thrilled with my service droid! It's a game-changer
+              for my busy lifestyle. It helps with cleaning, organizing, and
+              even brings me my morning coffee. It has become an indispensable
+              part of my daily routine. Highly recommended!
+            </p>
+          </div>
+          <!-- Review 1 End -->
+
+          <!-- Review 2 Start -->
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="Assets/johnk.jpg" alt="John K" />
+              <div class="user-info">
+                <h3>John K</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              The protocol droid I purchased exceeded my expectations. Its
+              language translation skills are incredible, and it has been
+              invaluable during my international business trips. It's like
+              having a personal translator by my side. The customization options
+              were a great touch too. A top-notch droid!
+            </p>
+          </div>
+          <!-- Review 2 End -->
+
+          <!-- Review 3 Start -->
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="Assets/markt.jpg" alt="Mark T" />
+              <div class="user-info">
+                <h3>Mark T</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              The security droid I bought has brought me peace of mind. Its
+              vigilant surveillance and quick response to potential threats make
+              me feel secure in my home. Its combat capabilities are impressive
+              too, ensuring my family's safety. It's a fantastic investment for
+              home security!
+            </p>
+          </div>
+          <!-- Review 3 End -->
+
+          <!-- Review 4 Start -->
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="Assets/dremily.jpg" alt="Dr Emily" />
+              <div class="user-info">
+                <h3>Dr. Emily</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              As a medical professional, I rely on my medical droid for
+              assistance in the operating room. Its precision and diagnostic
+              capabilities are unparalleled. It's like having an expert surgical
+              assistant. It has significantly improved patient outcomes and made
+              my job easier. I'm impressed!
+            </p>
+          </div>
+          <!-- Review 4 End -->
+        </div>
+      </div>
+    </section>
+    <!-- Review Section Ends -->
+    <!-- Menu Section Starts -->
+    <section class="menu" id="menu">
+      <h3 class="sub-heading">Our Menu</h3>
+      <h1 class="heading">Today's Speciality</h1>
+
+      <div class="box-container">
+        <!-- Menu 1 Start -->
+        <div class="box">
+          <div class="image">
+            <img src="images/menu-1.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious Food</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
+              explicabo iusto doloremque! Corrupti eligendi cum soluta quae
+              omnis earum ea! Similique suscipit dicta nihil, quidem quis labore
+              nulla nemo laborum!
+            </p>
+            <a href="#" class="btn">Add to Cart</a>
+            <span class="price">$12.99</span>
+          </div>
+        </div>
+        <!-- Menu 1 End -->
+
+        <!-- Menu 2 Start -->
+        <div class="box">
+          <div class="image">
+            <img src="images/menu-2.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious Food</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
+              explicabo iusto doloremque! Corrupti eligendi cum soluta quae
+              omnis earum ea! Similique suscipit dicta nihil, quidem quis labore
+              nulla nemo laborum!
+            </p>
+            <a href="#" class="btn">Add to Cart</a>
+            <span class="price">$12.99</span>
+          </div>
+        </div>
+        <!-- Menu 2 End -->
+
+        <!-- Menu 3 Start -->
+        <div class="box">
+          <div class="image">
+            <img src="images/menu-3.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious Food</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
+              explicabo iusto doloremque! Corrupti eligendi cum soluta quae
+              omnis earum ea! Similique suscipit dicta nihil, quidem quis labore
+              nulla nemo laborum!
+            </p>
+            <a href="#" class="btn">Add to Cart</a>
+            <span class="price">$12.99</span>
+          </div>
+        </div>
+        <!-- Menu 3 End -->
+
+        <!-- Menu 4 Start -->
+        <div class="box">
+          <div class="image">
+            <img src="images/menu-4.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Delicious Food</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
+              explicabo iusto doloremque! Corrupti eligendi cum soluta quae
+              omnis earum ea! Similique suscipit dicta nihil, quidem quis labore
+              nulla nemo laborum!
+            </p>
+            <a href="#" class="btn">Add to Cart</a>
+            <span class="price">$12.99</span>
+          </div>
+        </div>
+        <!-- Menu 4 End -->
+      </div>
+    </section>
+    <!-- Menu Section Ends -->
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__top">
           <div>
-            <h6 class="footer__title">Microsoft Store</h6>
+            <h6 class="footer__title">Products</h6>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <a href="" class="footer__list-link">About</a>
+                <a
+                  href="https://starwars.fandom.com/wiki/Astromech_droid/Legends"
+                  target="_blank"
+                  class="footer__list-link"
+                  >Service Droids</a
+                >
               </li>
               <li class="footer__list-item">
-                <a href="" class="footer__list-link">Careers</a>
+                <a
+                  href="https://starwars.fandom.com/wiki/Protocol_droid/Legends"
+                  target="_blank"
+                  class="footer__list-link"
+                  >Protocol Droids</a
+                >
               </li>
               <li class="footer__list-item">
-                <a href="" class="footer__list-link">Affiliates</a>
+                <a
+                  href="https://starwars.fandom.com/wiki/Medical_droid/Legends"
+                  target="_blank"
+                  class="footer__list-link"
+                  >Medical Droids</a
+                >
               </li>
               <li class="footer__list-item">
-                <a href="" class="footer__list-link">Sitemap</a>
+                <a
+                  href="https://starwars.fandom.com/wiki/Battle_droid/Legends"
+                  target="_blank"
+                  class="footer__list-link"
+                  >Security Droids</a
+                >
               </li>
             </ul>
           </div>
           <div>
-            <h6 class="footer__title">Education</h6>
+            <h6 class="footer__title">Contact Us</h6>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <a href="" class="footer__list-link">About</a>
+                <a
+                  href="https://mail.aol.com/"
+                  target="_blank"
+                  class="footer__list-link"
+                  >Email</a
+                >
               </li>
               <li class="footer__list-item">
-                <a href="" class="footer__list-link">Careers</a>
+                <a
+                  href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjNrPqOl4uAAxVcSmwGHdTtC8gQFnoECBEQAQ&url=https%3A%2F%2Fweb.whatsapp.com%2F&usg=AOvVaw1V09js0t2A_u6GXzP1jPsR&opi=89978449"
+                  target="_blank"
+                  class="footer__list-link"
+                  >Phone</a
+                >
               </li>
               <li class="footer__list-item">
-                <a href="" class="footer__list-link">Affiliates</a>
+                <a
+                  href="https://www.google.co.id/maps"
+                  target="_blank"
+                  class="footer__list-link"
+                  >Address</a
+                >
               </li>
               <li class="footer__list-item">
-                <a href="" class="footer__list-link">Sitemap</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h6 class="footer__title">Business</h6>
-            <ul class="footer__list">
-              <li class="footer__list-item">
-                <a href="" class="footer__list-link">About</a>
-              </li>
-              <li class="footer__list-item">
-                <a href="" class="footer__list-link">Careers</a>
-              </li>
-              <li class="footer__list-item">
-                <a href="" class="footer__list-link">Affiliates</a>
-              </li>
-              <li class="footer__list-item">
-                <a href="" class="footer__list-link">Sitemap</a>
+                <a href="#" class="footer__list-link">Costumer Service</a>
               </li>
             </ul>
           </div>
@@ -241,27 +582,32 @@
         <hr class="footer__divider" />
         <div class="footer__bottom">
           <span class="copyright"
-            >&copy; 2023 Company. All rights reserved.</span
+            >&copy; 2023 DroidSquad Company. All rights reserved.</span
           >
           <ul class="footer__list footer__list--bottom">
             <li class="footer__list-item">
               <a href="#" class="footer__list-link">
-                <i class="ri-facebook-circle-line"></i>
+                <i class="fa-brands fa-facebook"></i>
               </a>
             </li>
             <li class="footer__list-item">
               <a href="#" class="footer__list-link">
-                <i class="ri-instagram-line"></i>
+                <i class="fa-brands fa-instagram"></i>
               </a>
             </li>
             <li class="footer__list-item">
               <a href="#" class="footer__list-link">
-                <i class="ri-twitter-line"></i>
+                <i class="fa-brands fa-twitter"></i>
               </a>
             </li>
           </ul>
         </div>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link -->
+    <script src="script.js"></script>
   </body>
 </html>
