@@ -396,21 +396,21 @@ header .icons #menu-bars {
 }
 /* Product Section End */
 
-/* Menu Section Start */
-.menu .box-container {
+/* order Section Start */
+.order .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
 }
 
-.menu .box-container .box {
+.order .box-container .box {
   background: #fff;
   border: 0.1rem soliid rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
 }
 
-.menu .box-container .box .image {
+.order .box-container .box .image {
   height: 25rem;
   width: 100%;
   padding: 1.5 rem;
@@ -418,14 +418,14 @@ header .icons #menu-bars {
   position: relative;
 }
 
-.menu .box-container .box .image img {
+.order .box-container .box .image img {
   height: 100%;
   width: 100%;
   border-radius: 0.5rem;
   object-fit: cover;
 }
 
-.menu .box-container .box .image .fa-heart {
+.order .box-container .box .image .fa-heart {
   position: absolute;
   top: 2.5rem;
   right: 2.5rem;
@@ -439,43 +439,43 @@ header .icons #menu-bars {
   color: var(--text);
 }
 
-.menu .box-container .box .image .fa-heart:hover {
+.order .box-container .box .image .fa-heart:hover {
   background-color: var(--primary);
   color: #fff;
 }
 
-.menu .box-container .box .content {
+.order .box-container .box .content {
   padding: 2rem;
   padding-top: 0;
 }
 
-.menu .box-container .box .content .stars {
+.order .box-container .box .content .stars {
   padding-bottom: 1rem;
 }
 
-.menu .box-container .box .content .stars i {
+.order .box-container .box .content .stars i {
   font-size: 1.7rem;
   color: var(--primary);
 }
 
-.menu .box-container .box .content h3 {
+.order .box-container .box .content h3 {
   color: var(--text);
   font-size: 2.5rem;
 }
 
-.menu .box-container .box .content p {
+.order .box-container .box .content p {
   color: var(--light-color);
   font-size: 1.6rem;
   padding: 0.5rem 0;
   line-height: 1.5;
 }
 
-.menu .box-container .box .content .price {
+.order .box-container .box .content .price {
   color: var(--primary);
   margin-left: 1rem;
   font-size: 2.5rem;
 }
-/* Menu Section End */
+/* order Section End */
 
 /* Review Section Start */
 .review .slide {
@@ -580,7 +580,7 @@ header .icons #menu-bars {
   color: var(--primary);
 }
 /* Media Queries */
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   html {
     font-size: 55%;
   }
@@ -594,7 +594,7 @@ header .icons #menu-bars {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   header .icons #menu-bars {
     display: inline-block;
   }
@@ -628,7 +628,7 @@ header .icons #menu-bars {
   }
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   html {
     font-size: 50%;
   }

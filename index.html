@@ -6,7 +6,10 @@
       name="description"
       content="A Mock-up Landing page for a company that sells droid from the Star Wars Universe"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
     <title>DroidSquad</title>
     <link rel="icon" type="image/x-icon" href="Assets/logo-tab.svg" />
     <!-- Swiper link -->
@@ -189,7 +192,7 @@
       </div>
     </section>
     <!-- About Section Ends -->
-    <!-- Dishes Section Starts -->
+    <!-- Product Section Starts -->
     <section class="product" id="product">
       <h3 class="sub-heading">Our Products</h3>
       <h1 class="heading">Popular Products</h1>
@@ -275,7 +278,7 @@
         <!-- Box 1 End -->
       </div>
     </section>
-    <!-- Dishes Section Ends -->
+    <!-- Product Section Ends -->
 
     <!-- Review Section Starts -->
     <section class="review" id="review">
@@ -390,120 +393,61 @@
       </div>
     </section>
     <!-- Review Section Ends -->
-    <!-- Menu Section Starts -->
-    <section class="menu" id="menu">
-      <h3 class="sub-heading">Our Menu</h3>
-      <h1 class="heading">Today's Speciality</h1>
 
-      <div class="box-container">
-        <!-- Menu 1 Start -->
-        <div class="box">
-          <div class="image">
-            <img src="images/menu-1.jpg" alt="" />
-            <a href="#" class="fas fa-heart"></a>
+    <!-- Order Section Starts -->
+    <section class="order" id="order">
+      <h3 class="sub-heading">Order Form</h3>
+      <h1 class="heading">Order Today!</h1>
+
+      <form action="">
+        <div class="inputBox">
+          <div class="input">
+            <span>Name</span>
+            <input type="text" placeholder="Enter Your Name" />
           </div>
-          <div class="content">
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h3>Delicious Food</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
-              explicabo iusto doloremque! Corrupti eligendi cum soluta quae
-              omnis earum ea! Similique suscipit dicta nihil, quidem quis labore
-              nulla nemo laborum!
-            </p>
-            <a href="#" class="btn">Add to Cart</a>
-            <span class="price">$12.99</span>
+          <div class="input">
+            <span>Phone</span>
+            <input type="number" placeholder="Enter Your Phone Number" />
+          </div>
+          <div class="input">
+            <span>Order</span>
+            <input type="text" placeholder="Enter Product Type" />
+          </div>
+          <div class="input">
+            <span>Add-ons</span>
+            <input type="test" placeholder="Spareparts / Wireless Charger" />
+          </div>
+          <div class="input">
+            <span>Age</span>
+            <input type="number" placeholder="How Old are You" />
+          </div>
+          <div class="input">
+            <span>Date of Birth</span>
+            <input type="datetime-local" placeholder="Enter Birthdate" />
+          </div>
+          <div class="input">
+            <span>Address</span>
+            <textarea
+              name="address"
+              placeholder="Enter Your Address"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="input">
+            <span>Droid Purpose</span>
+            <textarea
+              name="reason"
+              placeholder="What do You Plan on Doing with the Droid"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
           </div>
         </div>
-        <!-- Menu 1 End -->
-
-        <!-- Menu 2 Start -->
-        <div class="box">
-          <div class="image">
-            <img src="images/menu-2.jpg" alt="" />
-            <a href="#" class="fas fa-heart"></a>
-          </div>
-          <div class="content">
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h3>Delicious Food</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
-              explicabo iusto doloremque! Corrupti eligendi cum soluta quae
-              omnis earum ea! Similique suscipit dicta nihil, quidem quis labore
-              nulla nemo laborum!
-            </p>
-            <a href="#" class="btn">Add to Cart</a>
-            <span class="price">$12.99</span>
-          </div>
-        </div>
-        <!-- Menu 2 End -->
-
-        <!-- Menu 3 Start -->
-        <div class="box">
-          <div class="image">
-            <img src="images/menu-3.jpg" alt="" />
-            <a href="#" class="fas fa-heart"></a>
-          </div>
-          <div class="content">
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h3>Delicious Food</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
-              explicabo iusto doloremque! Corrupti eligendi cum soluta quae
-              omnis earum ea! Similique suscipit dicta nihil, quidem quis labore
-              nulla nemo laborum!
-            </p>
-            <a href="#" class="btn">Add to Cart</a>
-            <span class="price">$12.99</span>
-          </div>
-        </div>
-        <!-- Menu 3 End -->
-
-        <!-- Menu 4 Start -->
-        <div class="box">
-          <div class="image">
-            <img src="images/menu-4.jpg" alt="" />
-            <a href="#" class="fas fa-heart"></a>
-          </div>
-          <div class="content">
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h3>Delicious Food</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
-              explicabo iusto doloremque! Corrupti eligendi cum soluta quae
-              omnis earum ea! Similique suscipit dicta nihil, quidem quis labore
-              nulla nemo laborum!
-            </p>
-            <a href="#" class="btn">Add to Cart</a>
-            <span class="price">$12.99</span>
-          </div>
-        </div>
-        <!-- Menu 4 End -->
-      </div>
+        <input type="submit" value="Order Now!" class="btn" />
+      </form>
     </section>
     <!-- Menu Section Ends -->
     <footer class="footer">
