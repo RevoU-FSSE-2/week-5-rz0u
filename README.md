@@ -29,7 +29,7 @@ Within this repository, I have created an engaging and contemporary website for 
     - [Update Nameservers in Niagahoster](#update-nameservers-in-niagahoster)
     - [Set Up Cloudflare DNS Settings](#set-up-cloudflare-dns-settings)
     - [Wait for DNS Propagation](#wait-for-dns-propagation)
-    - [You Can Visit the Finished Product Here](#you-can-visit-the-finished-product-here)
+  - [You Can Visit the Finished Product Here](#you-can-visit-the-finished-product-here)
 
 ## Website Building
 This is a documentation on how i built my website from the ground up, the first step i did was adding a HTML boilerplate to my index.html file and from there i start making the HTML barebone such as navbar, header, main, section, and footer.
@@ -315,7 +315,7 @@ After we're finished designing and writing the code for our website now is our t
 ### Wait for DNS Propagation
 After updating the DNS settings, it may take some time for the changes to propagate across the internet. DNS propagation can vary and may take up to 24-48 hours, although it often happens much faster.
 
-### You Can Visit the Finished Product Here
+## You Can Visit the Finished Product Here
 - [**https://thedroidyourelookingfor.site**](https://thedroidyourelookingfor.site)
 - [**www.thedroidyourelookingfor.site**](https://www.thedroidyourelookingfor.site)
 - [**https://rayhanzou-week5-assignment.netlify.app**](https://rayhanzou-week5-assignment.netlify.app)
